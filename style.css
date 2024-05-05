@@ -1,0 +1,188 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: darkred;
+    margin: 0;
+}
+h1 {
+    color: white;
+    font-size: xx-large;
+}
+h2 {
+    color: white;
+    font-size: x-large;
+}
+p {
+    font-size: x-large;
+}
+.navigace {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: black;
+    height: 60px;
+    border: 2px solid gold;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: x-large;
+}
+.navigace a {
+    border: 0px;
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    color:  red;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.fullpiece {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 30px;
+    padding-left: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid gold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.infozbrane {
+    color: red;
+    text-align: left;
+    background-color: rgb(22, 20, 20);
+    padding: 10px;
+    border-radius: 20px;
+}
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.sawcleaver {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+
+    
+}
+.ludwigholyblade {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+
+
+}
+.chikage {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+
+}
+.burialblade {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+
+}
+.wetnurse {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+
+}
+.ebrieta {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+
+}
+.hunterset img {
+    width: 50px;
+    height: 50px;
+}
+.hunterset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    border-radius: 20px;
+
+}
+.hunterset img {
+    width: 70px;
+    height: 70px;
+}
+.lokace1 {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+}
+.lokace2 {
+    padding: 10px;
+    background-color: rgb(22, 20, 20);
+    color: red;
+    display: flex;
+    gap: 36px;
+    border-radius: 20px;
+}
+.lokace img {
+    height: 250px;
+    width: 300px;
+}
+svg {
+    fill: white;
+    transition: ease 0.3s; 
+}
+.About {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid gold;
+    margin: 30px;
+    color: red;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text1 {
+    padding: 0px;
+}
+
+.telefonicislo {
+    padding: 0px;
+}
+
+a :hover{
+    fill: red;
+}
