@@ -2,11 +2,18 @@ header {
     display: flex;
     justify-content: center;
 }
-
-body {
-    background-color: darkred;
+body{
     margin: 0;
+    background-position: left top, right top;
+    background-image: url(Background_obrazek/136756.jpg), url(/Background_obrazek/183976.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%, 50%;
+    background-repeat: repeat-y;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 h1 {
     color: white;
     font-size: xx-large;
@@ -18,22 +25,36 @@ h2 {
 p {
     font-size: x-large;
 }
-.navigace {
+#text{
+    flex-direction: column;
+}
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 8%;
     background-color: black;
     height: 60px;
     border: 2px solid gold;
     border-radius: 20px;
     margin: 10px;
     font-size: x-large;
+    align-items: center;
 }
-.navigace a {
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0px;
     width: 60px;
     height: 30px;
-    margin-top: 20px;
     text-decoration: none;
     color:  red;
     background-color: rgb(0, 0, 0);
@@ -41,15 +62,13 @@ p {
 }
 .fullpiece {
     display: flex;
+    width: 1024px;
     justify-content: center;
     background-color: black;
     margin: 30px;
-    padding-left: 10px;
     flex-direction: column;
     border-radius: 20px;
     border: 2px solid gold;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .infozbrane {
@@ -64,70 +83,41 @@ img {
     height: 250px;
 }
 
-.sawcleaver {
+.weaponlore {
     padding: 10px;
     background-color: rgb(22, 20, 20);
     color: red;
     display: flex;
     gap: 36px;
     border-radius: 20px;
+    display: flex;
 
     
 }
-.ludwigholyblade {
+footer p {
+    margin: 20px;
+}
+.tabulka h1{
+    margin: 10px
+}
+.tabulka h2{
+    margin: 10px;
+}
+
+.Boss {
     padding: 10px;
     background-color: rgb(22, 20, 20);
     color: red;
     display: flex;
     gap: 36px;
     border-radius: 20px;
-
-
-}
-.chikage {
-    padding: 10px;
-    background-color: rgb(22, 20, 20);
-    color: red;
     display: flex;
-    gap: 36px;
-    border-radius: 20px;
+}
 
-}
-.burialblade {
-    padding: 10px;
-    background-color: rgb(22, 20, 20);
-    color: red;
-    display: flex;
-    gap: 36px;
-    border-radius: 20px;
-
-}
-.wetnurse {
-    padding: 10px;
-    background-color: rgb(22, 20, 20);
-    color: red;
-    display: flex;
-    gap: 36px;
-    border-radius: 20px;
-
-}
-.ebrieta {
-    padding: 10px;
-    background-color: rgb(22, 20, 20);
-    color: red;
-    display: flex;
-    gap: 36px;
-    border-radius: 20px;
-
-}
-.hunterset img {
-    width: 50px;
-    height: 50px;
-}
 .hunterset {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
     gap: 30px;
     background-color: rgb(22, 20, 20);
@@ -135,10 +125,15 @@ img {
     border-radius: 20px;
 
 }
-.hunterset img {
+.podhunter{
+    display: flex;
+    gap: 10px;
+}
+.podhunter img {
     width: 70px;
     height: 70px;
 }
+
 .lokace1 {
     padding: 10px;
     background-color: rgb(22, 20, 20);
@@ -146,15 +141,9 @@ img {
     display: flex;
     gap: 36px;
     border-radius: 20px;
-}
-.lokace2 {
-    padding: 10px;
-    background-color: rgb(22, 20, 20);
-    color: red;
     display: flex;
-    gap: 36px;
-    border-radius: 20px;
 }
+
 .lokace img {
     height: 250px;
     width: 300px;
@@ -185,4 +174,25 @@ svg {
 
 a :hover{
     fill: red;
+}
+@media screen and (max-width:1024px ) {
+    .weaponlore{
+        display: flex;
+        flex-direction: column;
+    }
+    .lokace1{
+        display: flex;
+        flex-direction: column;
+    }
+    .Boss{
+        display: flex;
+        flex-direction: column;
+    }
+    .hunterset{
+        justify-content: flex-start;
+    }
+    .fullpiece{
+        width: 90%;
+
+    }
 }
